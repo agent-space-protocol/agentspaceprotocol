@@ -1,0 +1,7 @@
+{
+  "type": "act",
+  "id": "a21",
+  "verb": "test.toggle",
+  "object": "lamp:1",
+  "x.example.trace": "7d1"
+}

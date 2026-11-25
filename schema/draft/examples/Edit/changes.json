@@ -1,0 +1,22 @@
+{
+  "type": "edit",
+  "id": "e1",
+  "changes": [
+    {
+      "op": "add",
+      "thing": {
+        "id": "bed:1",
+        "type": "room.bed"
+      }
+    },
+    {
+      "op": "relate",
+      "relation": {
+        "rel": "room.in",
+        "from": "bed:1",
+        "to": "room:1"
+      }
+    }
+  ],
+  "basis": 1100
+}

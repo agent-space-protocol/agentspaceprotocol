@@ -1,0 +1,10 @@
+{
+  "type": "outcome",
+  "id": "a19",
+  "end": "refused",
+  "seq": 1047,
+  "reason": {
+    "code": "stale",
+    "text": "lamp:1 changed at 1046, after basis 1041"
+  }
+}

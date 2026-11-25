@@ -1,0 +1,77 @@
+/* The reading version of the archive design (the lab's design standard, docs/brand/archive-design
+   in the lab's site repository): the same colour tokens and the three typefaces, square corners,
+   solid surfaces for long reading, and light or dark following the system. */
+
+:root {
+  --ar-bg: #09121d;
+  --ar-fg: #eaf4f6;
+  --ar-muted: #c3d2d9;
+  --ar-accent: #69e5f3;
+  --ar-pink: #f456a6;
+  --ar-surface: #112332;
+  --ar-line: #547383;
+  --ar-display: "Space Grotesk", "Inter", Arial, sans-serif;
+  --ar-body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ar-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Menlo, monospace;
+
+  --sl-font: var(--ar-body);
+  --sl-font-mono: var(--ar-mono);
+  --sl-color-accent-low: #10303d;
+  --sl-color-accent: #04d9ed;
+  --sl-color-accent-high: var(--ar-accent);
+  --sl-color-white: var(--ar-fg);
+  --sl-color-gray-1: #dbe7ec;
+  --sl-color-gray-2: var(--ar-muted);
+  --sl-color-gray-3: #9fb3bd;
+  --sl-color-gray-4: #6f8895;
+  --sl-color-gray-5: var(--ar-line);
+  --sl-color-gray-6: var(--ar-surface);
+  --sl-color-black: var(--ar-bg);
+  --sl-color-bg-nav: var(--ar-bg);
+  --sl-color-bg-sidebar: var(--ar-bg);
+  --sl-color-hairline: #24394a;
+  --sl-color-hairline-light: #2c4557;
+  --sl-content-width: 46rem;
+}
+
+:root[data-theme="light"] {
+  --ar-bg: #f1f2f5;
+  --ar-fg: #20233f;
+  --ar-muted: #5a647a;
+  --ar-accent: #087f9c;
+  --ar-pink: #bc276e;
+  --ar-surface: #e5eaf0;
+  --ar-line: #92a7b5;
+
+  --sl-color-accent-low: #cfe9ef;
+  --sl-color-accent: #087f9c;
+  --sl-color-accent-high: #064e60;
+  --sl-color-white: var(--ar-fg);
+  --sl-color-gray-1: #2b2f4c;
+  --sl-color-gray-2: var(--ar-muted);
+  --sl-color-gray-3: #6c7890;
+  --sl-color-gray-4: var(--ar-line);
+  --sl-color-gray-5: #c4d0da;
+  --sl-color-gray-6: var(--ar-surface);
+  --sl-color-gray-7: #eef1f5;
+  --sl-color-black: var(--ar-bg);
+  --sl-color-bg-nav: var(--ar-bg);
+  --sl-color-bg-sidebar: var(--ar-bg);
+  --sl-color-hairline: #d3dbe3;
+  --sl-color-hairline-light: #dfe5eb;
+}
+
+* { border-radius: 0 !important; }
+
+h1, h2, h3, .site-title, .sl-markdown-content h1, .sl-markdown-content h2, .sl-markdown-content h3 {
+  font-family: var(--ar-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.sl-markdown-content h2 { border-bottom: 1px solid var(--sl-color-hairline); padding-bottom: 0.3em; }
+
+.sl-markdown-content table { font-size: 0.92em; }
+.sl-markdown-content th { font-family: var(--ar-mono); font-size: 0.8em; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sl-color-gray-3); }
+.sl-markdown-content code { font-size: 0.9em; }
+.site-title { font-size: 1.15rem; }

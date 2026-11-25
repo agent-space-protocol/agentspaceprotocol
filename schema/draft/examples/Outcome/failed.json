@@ -1,0 +1,11 @@
+{
+  "type": "outcome",
+  "id": "a20",
+  "end": "failed",
+  "seq": 1049,
+  "reason": {
+    "code": "deadline",
+    "text": "stopped after 2 s"
+  },
+  "effects": []
+}

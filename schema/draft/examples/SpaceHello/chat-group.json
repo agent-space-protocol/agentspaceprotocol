@@ -1,0 +1,35 @@
+{
+  "type": "hello",
+  "space": "onebot:group/demo",
+  "parts": {
+    "core": 0,
+    "forms": 0
+  },
+  "supported": {
+    "core": [
+      0
+    ],
+    "forms": [
+      0
+    ]
+  },
+  "capabilities": {
+    "state": "external",
+    "participants": {
+      "outside": true,
+      "grace_seconds": 300
+    },
+    "forms": [
+      "structure",
+      "text",
+      "image"
+    ]
+  },
+  "vocabulary": "sha256:4be10000000000000000000000000000000000000000000000000000000000a1",
+  "record": {
+    "head": 1040,
+    "earliest": 1,
+    "keep_seconds": 7776000
+  },
+  "nonce": "q3V9sT1mYb2hR8kL0pZx4w"
+}

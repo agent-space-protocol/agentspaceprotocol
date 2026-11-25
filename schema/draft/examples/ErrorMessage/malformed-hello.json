@@ -1,0 +1,6 @@
+{
+  "type": "error",
+  "code": "malformed",
+  "text": "hello.parts.core is missing",
+  "about": "hello"
+}
