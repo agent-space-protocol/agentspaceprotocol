@@ -1,0 +1,13 @@
+{"from": "participant", "message": {"type": "hello", "parts": {"core": [0], "forms": [0], "consent": [0]}, "participant": "ed25519:7Hq2bW3k9xQvTnL0aZcRyE5uJpS8dF1gHiK4mO6wXr2"}}
+{"from": "space", "message": {"type": "hello", "space": "example:chat/team", "parts": {"core": 0, "forms": 0}, "supported": {"core": [0], "forms": [0]}, "capabilities": {"state": "external", "participants": {"outside": true, "grace_seconds": 300}, "forms": ["structure", "text", "image"]}, "vocabulary": "sha256:4be10000000000000000000000000000000000000000000000000000000000a1", "record": {"head": 1040, "earliest": 1, "keep_seconds": 7776000}, "nonce": "q3V9sT1mYb2hR8kL0pZx4w"}}
+{"from": "participant", "message": {"type": "join", "id": "j1", "role": "member", "presentation": {"name": "Fin", "avatar": "sha256:90c31111111111111111111111111111111111111111111111111111111111b2"}, "proof": "c2lnbmF0dXJlLWV4YW1wbGU"}}
+{"from": "space", "message": {"type": "outcome", "id": "j1", "end": "done", "seq": 1041, "result": {"presence": "p-3", "role": "member", "presentation": {"avatar": "used"}, "resume": "r-8f2a6c", "head": 1040}}}
+{"from": "participant", "message": {"type": "observe", "id": "o1", "forms": ["structure"]}}
+{"from": "space", "message": {"type": "observation", "id": "o1", "seq": 1041, "confirmed": "2026-11-24T21:05:12Z", "structure": {"things": [{"id": "msg:88", "type": "chat.message", "from": "member:41", "text": "@Fin what time do we meet today?"}]}}}
+{"from": "participant", "message": {"type": "act", "id": "a17", "verb": "chat.reply", "object": "msg:88", "args": {"text": "Seven, at the east gate."}, "basis": 1041}}
+{"from": "space", "message": {"type": "outcome", "id": "a17", "end": "done", "seq": 1043, "events": [1042]}}
+{"from": "participant", "message": {"type": "act", "id": "a18", "verb": "chat.send", "object": "channel:main", "args": {"text": "I'm here already."}, "basis": 1043}}
+{"from": "space", "message": {"type": "accepted", "id": "a18"}}
+{"from": "space", "message": {"type": "outcome", "id": "a18", "end": "unknown", "seq": 1050, "reason": {"code": "chat.delivery_timeout", "text": "no receipt 20 s after sending"}, "known": {"handed_to_platform": true}, "unconfirmed": ["delivered"]}}
+{"from": "participant", "message": {"type": "consent", "id": "c9", "act": 1043, "agree": true}}
+{"from": "space", "message": {"type": "outcome", "id": "c9", "end": "refused", "reason": {"code": "unsupported", "text": "consent was not negotiated"}}}

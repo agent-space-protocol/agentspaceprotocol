@@ -1,0 +1,14 @@
+{
+  "type": "offer",
+  "id": "of1",
+  "door": "door:east",
+  "thing": {
+    "id": "cup:3",
+    "type": "room.mug",
+    "parents": [
+      "room.cup",
+      "room.thing"
+    ],
+    "color": "blue"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "observation",
+  "id": "o2",
+  "seq": 12,
+  "structure": {
+    "things": [
+      {
+        "id": "lamp:1",
+        "type": "test.lamp",
+        "on": true
+      }
+    ],
+    "relations": [
+      {
+        "rel": "test.in",
+        "from": "lamp:1",
+        "to": "box:1"
+      }
+    ]
+  },
+  "forms": {
+    "text": {
+      "media": "text/plain",
+      "data": "A lamp, on, in a box."
+    }
+  },
+  "senses": {
+    "lit": [
+      "lamp:1"
+    ]
+  }
+}

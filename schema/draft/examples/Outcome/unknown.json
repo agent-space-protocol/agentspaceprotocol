@@ -1,0 +1,16 @@
+{
+  "type": "outcome",
+  "id": "a18",
+  "end": "unknown",
+  "seq": 1050,
+  "reason": {
+    "code": "chat.delivery_timeout",
+    "text": "no receipt 20 s after sending"
+  },
+  "known": {
+    "handed_to_platform": true
+  },
+  "unconfirmed": [
+    "delivered"
+  ]
+}

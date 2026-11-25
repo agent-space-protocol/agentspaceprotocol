@@ -1,0 +1,9 @@
+{
+  "type": "act",
+  "id": "a20",
+  "verb": "test.wait",
+  "args": {
+    "seconds": 30
+  },
+  "deadline": 2
+}

@@ -1,0 +1,16 @@
+{
+  "type": "observation",
+  "id": "o1",
+  "seq": 1041,
+  "confirmed": "2026-11-24T21:05:12Z",
+  "structure": {
+    "things": [
+      {
+        "id": "msg:88",
+        "type": "chat.message",
+        "from": "member:41",
+        "text": "@Fin what time do we meet today?"
+      }
+    ]
+  }
+}

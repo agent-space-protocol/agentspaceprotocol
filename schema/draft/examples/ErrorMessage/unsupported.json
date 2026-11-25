@@ -1,0 +1,6 @@
+{
+  "type": "error",
+  "code": "unsupported",
+  "text": "part consent was not negotiated",
+  "about": "cancel"
+}

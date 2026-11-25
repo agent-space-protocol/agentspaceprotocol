@@ -1,0 +1,12 @@
+{
+  "type": "outcome",
+  "id": "a22",
+  "end": "cancelled",
+  "seq": 1052,
+  "effects": [
+    {
+      "thing": "file:notes.md",
+      "text": "first 3 lines written"
+    }
+  ]
+}

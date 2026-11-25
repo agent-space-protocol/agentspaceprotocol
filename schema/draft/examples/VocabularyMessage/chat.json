@@ -1,0 +1,102 @@
+{
+  "type": "vocabulary",
+  "id": "v1",
+  "hash": "sha256:4be10000000000000000000000000000000000000000000000000000000000a1",
+  "vocabulary": {
+    "namespaces": {
+      "chat": {
+        "version": "1.0.0",
+        "line": "Chat groups: channels, messages, members."
+      }
+    },
+    "types": {
+      "chat.message": {
+        "line": "A message in a channel.",
+        "properties": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "chat.channel": {
+        "line": "A channel."
+      }
+    },
+    "verbs": {
+      "chat.reply": {
+        "line": "Reply to a message in the same channel.",
+        "object": "chat.message",
+        "params": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ]
+        },
+        "effect": "change",
+        "default": {
+          "end": "done"
+        },
+        "stale": "allow"
+      },
+      "chat.send": {
+        "line": "Send a new message to a channel.",
+        "object": "chat.channel",
+        "params": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ]
+        },
+        "effect": "send",
+        "outcomes": [
+          "done",
+          "refused",
+          "unknown"
+        ],
+        "reasons": [
+          "chat.delivery_timeout"
+        ],
+        "default": {
+          "end": "refused",
+          "reason": {
+            "code": "forbidden"
+          }
+        }
+      }
+    },
+    "events": {
+      "chat.posted": {
+        "line": "A message was posted.",
+        "perceived": "all"
+      }
+    },
+    "forms": {
+      "text": {
+        "media": "text/plain",
+        "line": "The channel as text."
+      },
+      "image": {
+        "media": "image/png"
+      }
+    },
+    "pages": {
+      "chat": "# Chat\n\nA chat group has channels and members."
+    }
+  }
+}

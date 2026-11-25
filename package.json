@@ -1,0 +1,23 @@
+{
+  "name": "agentspaceprotocol",
+  "private": true,
+  "description": "The specification of the Agent Space Protocol",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.ts",
+    "check": "node scripts/generate.ts --check && node scripts/validate-examples.ts && node scripts/check-translations.ts",
+    "docs:dev": "pnpm --dir site dev",
+    "docs:build": "pnpm --dir site build"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "typescript": "^5.9.3",
+    "typescript-json-schema": "^0.68.0"
+  }
+}
