@@ -13,18 +13,18 @@ Anything that changes what an implementation must do (a new message, field, reas
 part; a change of meaning) goes through a proposal first. See [proposals/](proposals/README.md).
 
 While the protocol is a draft (every part at version `0`), accepted proposals change the
-specification directly. Once the parts are frozen, the [compatibility rules](docs/en/compatibility.md)
+specification directly. Once the parts are frozen, the [compatibility rules](docs/en/specification/draft/compatibility.md)
 apply: the protocol only grows by addition, names are never reused, and a change that is not an
 addition takes a new integer version of its part.
 
 ## How the repository fits together
 
 - `schema/draft/schema.ts` is the single source. Run `pnpm generate` after changing it and commit
-  the generated `schema.json` and `docs/en/reference/schema.md` with the change.
+  the generated `schema.json` and `docs/en/specification/draft/reference/schema.md` with the change.
 - Every message has at least one example in `schema/draft/examples/<Definition>/`. Add one for a new
   message.
-- `docs/en/` is normative; `docs/zh/` keeps the same files, headings, tables, code blocks and
-  links. `pnpm check` compares their structure.
+- `docs/en/` is the site in English, and its `specification/` is normative; `docs/zh/` keeps the
+  same files, headings, tables, code blocks and links. `pnpm check` compares their structure.
 - The SDKs carry a copy of `schema.json` and check in CI that it matches this repository.
 
 ## Checks

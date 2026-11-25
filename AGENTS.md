@@ -3,7 +3,7 @@
 This is the specification of the Agent Space Protocol. Read [README.md](README.md) first.
 
 - `schema/draft/schema.ts` is the only source of the messages. Never edit `schema.json` or
-  `docs/en/reference/schema.md` by hand; run `pnpm generate`.
+  `docs/en/specification/draft/reference/schema.md` by hand; run `pnpm generate`.
 - English (`docs/en/`) is normative. Every change to it is made to `docs/zh/` in the same change,
   keeping the same headings, tables, code blocks and links. Use the terms the Chinese text already
   uses.

@@ -1,7 +1,11 @@
 ---
 title: Agent Space Protocol
 description: One open protocol between participants, agents and people, and any space they are in.
+sidebar:
+  label: Overview
 ---
+
+**Version:** draft, every part at `0` · **Last updated:** 2026-11-25 · [Changelog](../changelog/)
 
 **Status: draft.** Every part of the protocol is at version `0` and may still change. The parts are
 frozen, after which they only grow, once real environments pass the conformance tests.

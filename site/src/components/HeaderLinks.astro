@@ -1,0 +1,30 @@
+---
+// The header's section links, as on modelcontextprotocol.io, before the social icons.
+import Default from "@astrojs/starlight/components/SocialIcons.astro";
+
+const locale = Astro.locals.starlightRoute.locale ?? "en";
+const zh = locale === "zh";
+const here = Astro.url.pathname;
+const root = import.meta.env.BASE_URL.replace(/\/$/, "");
+const sections = [
+  ["docs/intro/", zh ? "文档" : "Docs", "docs/"],
+  ["specification/draft/", zh ? "规范" : "Specification", "specification/"],
+  ["extensions/", zh ? "扩展" : "Extensions", "extensions/"],
+  ["proposals/", zh ? "提案" : "Proposals", "proposals/"],
+  ["community/contributing/", zh ? "社区" : "Community", "community/"],
+];
+const version = zh ? "草案 (v0)" : "draft (v0)";
+---
+<details class="asp-version">
+  <summary aria-label={zh ? "规范版本" : "Specification version"}>{version}</summary>
+  <div>
+    <a href={`${root}/${locale}/specification/draft/`} aria-current="true">{version}<small>{zh ? "当前" : "current"}</small></a>
+    <a href={`${root}/${locale}/specification/changelog/`}>{zh ? "变更记录" : "Changelog"}</a>
+  </div>
+</details>
+<nav class="asp-sections" aria-label={zh ? "各部分" : "Sections"}>
+  {sections.map(([href, label, area]) => (
+    <a href={`${root}/${locale}/${href}`} aria-current={here.startsWith(`${root}/${locale}/${area}`) ? "page" : undefined}>{label}</a>
+  ))}
+</nav>
+<Default />

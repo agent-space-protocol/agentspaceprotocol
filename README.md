@@ -20,14 +20,16 @@ they only grow, once real environments pass the conformance tests.
 | [`schema/draft/schema.ts`](schema/draft/schema.ts) | The single source of every message and type |
 | [`schema/draft/schema.json`](schema/draft/schema.json) | JSON Schema 2020-12, generated from `schema.ts` |
 | [`schema/draft/examples/`](schema/draft/examples/) | At least one example of every message, and a full exchange, all checked against the schema |
-| [`docs/en/`](docs/en/) | The specification text, in English (normative) |
-| [`docs/zh/`](docs/zh/) | The specification text, in Chinese, kept in sync with the English |
-| [`docs/en/reference/schema.md`](docs/en/reference/schema.md) | The schema reference, generated from `schema.ts` |
+| [`docs/en/specification/draft/`](docs/en/specification/draft/) | The specification text, in English (normative) |
+| [`docs/zh/specification/draft/`](docs/zh/specification/draft/) | The specification text, in Chinese, kept in sync with the English |
+| [`docs/en/specification/draft/reference/schema.md`](docs/en/specification/draft/reference/schema.md) | The schema reference, generated from `schema.ts` |
+| [`docs/en/`](docs/en/), [`docs/zh/`](docs/zh/) | The whole site: the home page, the documentation, extensions, proposals and community pages |
 | [`proposals/`](proposals/) | How to propose a change or an extension |
-| [`site/`](site/) | The documentation site (Astro Starlight) |
+| [`site/`](site/) | The site, agentspaceprotocol.org (Astro Starlight), deployed to GitHub Pages from `main` |
 
-Start with [the overview](docs/en/index.md) ([中文](docs/zh/index.md)), then
-[Actions and outcomes](docs/en/actions.md) and [Messages](docs/en/messages.md).
+Start with [what ASP is](docs/en/docs/intro.md) ([中文](docs/zh/docs/intro.md)) or the
+[specification](docs/en/specification/draft/index.md) ([中文](docs/zh/specification/draft/index.md)), then
+[Actions and outcomes](docs/en/specification/draft/actions.md) and [Messages](docs/en/specification/draft/messages.md).
 
 ## Implementations and tools
 

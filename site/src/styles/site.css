@@ -1,0 +1,61 @@
+/* The site's own pieces on top of the archive reading version: the header's section links, the home
+   page's blocks, and the figures, which follow light and dark like the rest of the page. */
+
+.asp-sections { display: flex; gap: 1.25rem; align-items: center; margin-inline-end: 0.5rem; }
+.asp-sections a { color: var(--sl-color-gray-2); text-decoration: none; font: 500 0.9rem var(--ar-display); letter-spacing: 0.01em; white-space: nowrap; }
+.asp-sections a:hover, .asp-sections a[aria-current="page"] { color: var(--sl-color-white); }
+@media (max-width: 72rem) { .asp-sections { display: none; } }
+
+/* figures drawn inline, in the page's colours */
+.asp-fig { margin: 2rem 0; }
+.asp-fig svg { display: block; width: 100%; height: auto; font-family: var(--ar-body); }
+.asp-fig .frame { fill: none; stroke: var(--sl-color-hairline-light); stroke-width: 2; }
+.asp-fig .box { fill: var(--sl-color-black); stroke: var(--sl-color-white); stroke-width: 2.5; }
+.asp-fig .proto { fill: var(--sl-color-accent-low); stroke: var(--sl-color-accent); stroke-width: 3; }
+.asp-fig .agent { fill: color-mix(in srgb, var(--ar-pink) 14%, var(--sl-color-black)); stroke: var(--ar-pink); stroke-width: 3; }
+.asp-fig .t { fill: var(--sl-color-white); }
+.asp-fig .m { fill: var(--sl-color-gray-2); }
+.asp-fig .q { fill: var(--sl-color-gray-3); }
+.asp-fig .b { font-weight: 700; }
+.asp-fig .d { font-family: var(--ar-display); }
+.asp-fig .arrow { fill: none; stroke: var(--sl-color-gray-3); stroke-width: 2.5; }
+.asp-fig .head { fill: var(--sl-color-gray-3); }
+.asp-fig figcaption { margin-top: 0.6rem; font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+
+/* home page */
+.asp-home h2 { margin-top: 3rem; }
+.asp-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.asp-card { border: 1px solid var(--sl-color-gray-5); background: var(--sl-color-gray-6); padding: 1.25rem 1.25rem 1rem; }
+.asp-card h3 { margin: 0 0 0.5rem; font: 500 1.15rem var(--ar-display); color: var(--sl-color-white); }
+.asp-card p { margin: 0 0 0.75rem; color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); }
+.asp-card a { font-weight: 600; text-decoration: none; }
+.asp-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); gap: 1.25rem 2rem; margin: 1.5rem 0; }
+.asp-features div { border-inline-start: 2px solid var(--sl-color-accent); padding-inline-start: 1rem; }
+.asp-features b { display: block; color: var(--sl-color-white); margin-bottom: 0.25rem; font-family: var(--ar-display); font-weight: 500; }
+.asp-features p { margin: 0; color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); }
+
+/* the content's spacing between siblings must not push grid items apart */
+.sl-markdown-content .asp-cards > *, .sl-markdown-content .asp-features > * { margin-top: 0; }
+@media (min-width: 50rem) { .asp-features { grid-template-columns: repeat(2, 1fr); } }
+
+/* the draft notice on every page, and the version in the header */
+.asp-draft { padding: 0.45rem 1rem; text-align: center; font-size: var(--sl-text-sm); background: color-mix(in srgb, var(--ar-pink) 16%, var(--sl-color-black)); color: var(--sl-color-white); border-bottom: 1px solid color-mix(in srgb, var(--ar-pink) 45%, transparent); }
+.asp-draft a { margin-inline-start: 0.5rem; color: var(--sl-color-white); font-weight: 600; }
+.asp-version { position: relative; margin-inline-end: 0.75rem; }
+.asp-version summary { list-style: none; cursor: pointer; font: 500 0.8rem var(--ar-mono); color: var(--sl-color-gray-2); border: 1px solid var(--sl-color-gray-5); padding: 0.2rem 0.55rem; white-space: nowrap; }
+.asp-version summary::-webkit-details-marker { display: none; }
+.asp-version summary::after { content: " \25BE"; }
+.asp-version > div { position: absolute; inset-inline-end: 0; top: calc(100% + 0.35rem); z-index: 10; min-width: 12rem; background: var(--sl-color-black); border: 1px solid var(--sl-color-gray-5); padding: 0.35rem 0; }
+.asp-version > div a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.35rem 0.8rem; color: var(--sl-color-gray-2); text-decoration: none; font-size: var(--sl-text-sm); }
+.asp-version > div a:hover, .asp-version > div a[aria-current] { color: var(--sl-color-white); }
+.asp-version small { color: var(--sl-color-accent); }
+@media (max-width: 50rem) { .asp-version { display: none; } }
+/* the home page's status, above the tagline */
+.hero .tagline::before { content: "Draft \00B7  v0"; display: block; width: max-content; margin-bottom: 0.75rem; padding: 0.15rem 0.6rem; font: 500 0.8rem var(--ar-mono); letter-spacing: 0.05em; color: var(--ar-pink); border: 1px solid var(--ar-pink); }
+
+/* the header holds the title, search, version, five sections and the menus without pushing any out */
+.site-title { flex-shrink: 0; }
+.asp-sections { gap: 0.6rem; }
+.asp-sections a { font-size: 0.85rem; }
+.asp-version { margin-inline-end: 0.35rem; }
+@media (max-width: 75rem) { .asp-sections { display: none; } }
