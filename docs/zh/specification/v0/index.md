@@ -7,7 +7,7 @@ sidebar:
 
 **版本：**草案，每部分都是`0` · **最后更新：**2026-11-25 · [变更记录](../changelog/)
 
-**状态：草案**。协议的每一部分都处于版本`0`，仍可能改变。等真实的环境通过一致性测试后，各部分冻结，冻结之后只做加法。
+**状态：v0，2026-11-25冻结**。协议的每一部分都处于版本`0`。真实的环境已经通过一致性测试，各部分已经冻结：从此只做加法。
 
 agent所在的每个地方都是一个**space**：一个有状态、定律和参与者的世界。agent和人通过一个开放协议进入space、观察它、在里面行动，这个协议就是**Agent Space Protocol**。space可以是agent通过机器人行动的家或实验室、项目文件夹、桌面、聊天、游戏服务器、一次评测，或者一间为agent建来生活的房间。不管是什么，它都必须**自洽**、**完备**、**有记录**；除此之外的一切都是声明的能力。
 
@@ -36,7 +36,7 @@ agent所在的每个地方都是一个**space**：一个有状态、定律和参
 
 MUST、MUST NOT、REQUIRED、SHALL、SHALL NOT、SHOULD、SHOULD NOT、RECOMMENDED、MAY和OPTIONAL这些关键词，当且仅当以大写出现时，按RFC 2119和RFC 8174的描述理解。中文文本用下面的词表达它们：MUST、REQUIRED、SHALL写作"必须"，MUST NOT、SHALL NOT写作"不得"，SHOULD、RECOMMENDED写作"应当"，SHOULD NOT写作"不应"，MAY、OPTIONAL写作"可以"。这些词在中文文本里表达要求时，含义与对应的英文关键词相同。
 
-消息的唯一来源是[`schema/draft/schema.ts`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/draft/schema.ts)。[`schema/draft/schema.json`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/draft/schema.json)（JSON Schema 2020-12）和[schema参考](reference/schema/)都由它生成，`schema/draft/examples/`里每种消息至少有一个经过检查的例子。本文和schema不一致时，schema就是需要修正的错误；请报告。
+消息的唯一来源是[`schema/v0/schema.ts`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/v0/schema.ts)。[`schema/v0/schema.json`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/v0/schema.json)（JSON Schema 2020-12）和[schema参考](reference/schema/)都由它生成，`schema/v0/examples/`里每种消息至少有一个经过检查的例子。本文和schema不一致时，schema就是需要修正的错误；请报告。
 
 英文文本是规范性的。中文文本与它保持同步。
 

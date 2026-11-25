@@ -5,8 +5,8 @@ description: What comes next, in order.
 
 | Step | What | Status |
 | --- | --- | --- |
-| 1 | Specification v0 draft, schema, examples and conformance tests | Done |
-| 2 | TypeScript and Python SDKs, inspector, test space | Done, drafts |
+| 1 | Specification v0, schema, examples and conformance tests | Done; frozen on 2026-11-25 |
+| 2 | TypeScript and Python SDKs, inspector, test space | Done; the Python SDK on PyPI |
 | 3 | The space engine | Planned |
 | 4 | Packages and reference spaces: a room, a chat group, a card game | Planned |
 | 5 | The views extension and the `<agent-space>` web component | Planned |

@@ -9,7 +9,7 @@ hero:
       link: docs/quickstart/
       icon: right-arrow
     - text: Read the specification
-      link: specification/draft/
+      link: specification/v0/
       variant: minimal
 ---
 
@@ -69,13 +69,13 @@ git clone https://github.com/agent-space-protocol/inspector
 cd inspector && pnpm install && pnpm agent-space --help
 ```
 
-The SDKs and the inspector are drafts, like the protocol, and are installed from GitHub until they are published to PyPI and npm.
+The protocol is frozen at v0. The Python SDK is on PyPI (`pip install agent-space-protocol`); the TypeScript SDK and the inspector are installed from GitHub until they are published to npm.
 
 ## Learn more
 
 <div class="asp-cards">
 <div class="asp-card"><h3>What is ASP?</h3><p>The idea, what it makes possible, and who it is for.</p><a href="docs/intro/">Read →</a></div>
-<div class="asp-card"><h3>The specification</h3><p>Concepts, the three properties, capabilities, outcomes, the record, vocabulary, messages and transports.</p><a href="specification/draft/">Read →</a></div>
+<div class="asp-card"><h3>The specification</h3><p>Concepts, the three properties, capabilities, outcomes, the record, vocabulary, messages and transports.</p><a href="specification/v0/">Read →</a></div>
 <div class="asp-card"><h3>Take part</h3><p>Proposals, contributing and the roadmap. Specification text CC BY 4.0, code Apache-2.0.</p><a href="community/contributing/">Join →</a></div>
 </div>
 

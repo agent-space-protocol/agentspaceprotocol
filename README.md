@@ -10,26 +10,26 @@ to live in. Whatever it is, it must be **consistent** (what participants see mak
 `cancelled` or `unknown`) and **recorded** (everything is appended to a record by sequence
 number). Everything else about a space is a declared capability.
 
-**Status: draft.** Every part of the protocol is at version `0`. The parts are frozen, after which
-they only grow, once real environments pass the conformance tests.
+**Status: v0, frozen on 2026-11-25.** Every part of the protocol is at version `0`, and the protocol now
+only grows by addition ([compatibility rules](docs/en/specification/v0/compatibility.md)).
 
 ## What is here
 
 | Path | What it holds |
 | --- | --- |
-| [`schema/draft/schema.ts`](schema/draft/schema.ts) | The single source of every message and type |
-| [`schema/draft/schema.json`](schema/draft/schema.json) | JSON Schema 2020-12, generated from `schema.ts` |
-| [`schema/draft/examples/`](schema/draft/examples/) | At least one example of every message, and a full exchange, all checked against the schema |
-| [`docs/en/specification/draft/`](docs/en/specification/draft/) | The specification text, in English (normative) |
-| [`docs/zh/specification/draft/`](docs/zh/specification/draft/) | The specification text, in Chinese, kept in sync with the English |
-| [`docs/en/specification/draft/reference/schema.md`](docs/en/specification/draft/reference/schema.md) | The schema reference, generated from `schema.ts` |
+| [`schema/v0/schema.ts`](schema/v0/schema.ts) | The single source of every message and type |
+| [`schema/v0/schema.json`](schema/v0/schema.json) | JSON Schema 2020-12, generated from `schema.ts` |
+| [`schema/v0/examples/`](schema/v0/examples/) | At least one example of every message, and a full exchange, all checked against the schema |
+| [`docs/en/specification/v0/`](docs/en/specification/v0/) | The specification text, in English (normative) |
+| [`docs/zh/specification/v0/`](docs/zh/specification/v0/) | The specification text, in Chinese, kept in sync with the English |
+| [`docs/en/specification/v0/reference/schema.md`](docs/en/specification/v0/reference/schema.md) | The schema reference, generated from `schema.ts` |
 | [`docs/en/`](docs/en/), [`docs/zh/`](docs/zh/) | The whole site: the home page, the documentation, extensions, proposals and community pages |
 | [`proposals/`](proposals/) | How to propose a change or an extension |
 | [`site/`](site/) | The site, agentspaceprotocol.org (Astro Starlight), deployed to GitHub Pages from `main` |
 
 Start with [what ASP is](docs/en/docs/intro.md) ([中文](docs/zh/docs/intro.md)) or the
-[specification](docs/en/specification/draft/index.md) ([中文](docs/zh/specification/draft/index.md)), then
-[Actions and outcomes](docs/en/specification/draft/actions.md) and [Messages](docs/en/specification/draft/messages.md).
+[specification](docs/en/specification/v0/index.md) ([中文](docs/zh/specification/v0/index.md)), then
+[Actions and outcomes](docs/en/specification/v0/actions.md) and [Messages](docs/en/specification/v0/messages.md).
 
 ## Implementations and tools
 

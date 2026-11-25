@@ -1,13 +1,13 @@
 ---
-// On every page: the protocol is a draft. A page's own banner, if it has one, follows.
+// On every page: the protocol's release. A page's own banner, if it has one, follows.
 import Default from "@astrojs/starlight/components/Banner.astro";
 
 const locale = Astro.locals.starlightRoute.locale ?? "en";
 const zh = locale === "zh";
 const root = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
-<div class="asp-draft" role="note">
-  {zh ? "草案：ASP 现在是 v0 草案，第一次正式发布前任何部分都可能改。" : "Draft: ASP is at version 0, a draft; any part may change before the first release."}
+<div class="asp-status" role="note">
+  {zh ? "v0：ASP 的每一部分都在版本 0，2026-11-25 冻结，从此只做加法。" : "v0: every part of ASP is at version 0, frozen on 2026-11-25; from now on it only grows by addition."}
   <a href={`${root}/${locale}/docs/learn/versioning/`}>{zh ? "版本" : "Versions"}</a>
 </div>
 <Default />

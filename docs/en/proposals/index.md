@@ -13,6 +13,6 @@ A proposal is how the protocol changes: a new message, field, reason, capability
 | Accepted | Merged together with the specification change, the schema change, the examples and the tests |
 | Rejected or withdrawn | Merged with its status, so the reasons are kept |
 
-Every proposal follows the [compatibility rules](../specification/draft/compatibility/), says which part it changes and whether that part needs a new version, says how the conformance tests check it, and changes the English and Chinese text together.
+Every proposal follows the [compatibility rules](../specification/v0/compatibility/), says which part it changes and whether that part needs a new version, says how the conformance tests check it, and changes the English and Chinese text together.
 
 The template and the list of proposals are in [proposals/](https://github.com/agent-space-protocol/agentspaceprotocol/tree/main/proposals).

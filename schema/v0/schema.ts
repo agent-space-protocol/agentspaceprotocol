@@ -1,5 +1,5 @@
 /**
- * Agent Space Protocol (ASP), draft.
+ * Agent Space Protocol (ASP), v0: every part at version 0, frozen on 2026-11-25.
  *
  * This file is the single source of the protocol's messages. `schema.json` (JSON Schema 2020-12)
  * and the reference documentation are generated from it; never edit them by hand.
@@ -11,7 +11,7 @@
  *
  * Parts and versions: the protocol is divided into parts (`core` and one part per capability that
  * has messages). Every part has an integer version of its own. All parts are at version 0 in this
- * draft.
+ * release, which only grows by addition.
  *
  * @module
  */

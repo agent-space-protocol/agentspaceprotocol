@@ -9,7 +9,7 @@ hero:
       link: docs/quickstart/
       icon: right-arrow
     - text: 读规范
-      link: specification/draft/
+      link: specification/v0/
       variant: minimal
 ---
 
@@ -69,13 +69,13 @@ git clone https://github.com/agent-space-protocol/inspector
 cd inspector && pnpm install && pnpm agent-space --help
 ```
 
-SDK和inspector和协议一样还是草案，发布到PyPI和npm之前，从GitHub安装。
+协议已冻结在v0。Python SDK在PyPI上（`pip install agent-space-protocol`）；TypeScript SDK和inspector发布到npm之前，从GitHub安装。
 
 ## 了解更多
 
 <div class="asp-cards">
 <div class="asp-card"><h3>什么是ASP？</h3><p>它是什么，能做什么，给谁用。</p><a href="docs/intro/">阅读 →</a></div>
-<div class="asp-card"><h3>规范</h3><p>概念、三条性质、能力、结果、记录、词汇、消息和传输。</p><a href="specification/draft/">阅读 →</a></div>
+<div class="asp-card"><h3>规范</h3><p>概念、三条性质、能力、结果、记录、词汇、消息和传输。</p><a href="specification/v0/">阅读 →</a></div>
 <div class="asp-card"><h3>参与进来</h3><p>提案、贡献和路线图。规范文本CC BY 4.0，代码Apache-2.0。</p><a href="community/contributing/">加入 →</a></div>
 </div>
 

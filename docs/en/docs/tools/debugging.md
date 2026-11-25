@@ -24,4 +24,4 @@ The record is the first place to look: `p.record(start, to)` returns every actio
 | `deadline` | The action's deadline, or the time to wait for consent, passed |
 | `closed`, `restarted` | The space closed, or crashed and restarted, while the action was under way |
 
-The full list is in [Actions and outcomes](../../../specification/draft/actions/).
+The full list is in [Actions and outcomes](../../../specification/v0/actions/).

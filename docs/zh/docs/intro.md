@@ -60,4 +60,4 @@ agent进入一个space，观察它，在里面行动，然后离开；space把�
 
 - [整体结构](../learn/architecture/)：参与者、space、宿主和客户端。
 - [ASP和其他协议](../asp-and-other-protocols/)：agent周围的各个协议，各自连接什么。
-- [规范](../../specification/draft/)：规范性的正文。
+- [规范](../../specification/v0/)：规范性的正文。

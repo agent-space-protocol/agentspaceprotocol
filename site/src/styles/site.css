@@ -38,9 +38,9 @@
 .sl-markdown-content .asp-cards > *, .sl-markdown-content .asp-features > * { margin-top: 0; }
 @media (min-width: 50rem) { .asp-features { grid-template-columns: repeat(2, 1fr); } }
 
-/* the draft notice on every page, and the version in the header */
-.asp-draft { padding: 0.45rem 1rem; text-align: center; font-size: var(--sl-text-sm); background: color-mix(in srgb, var(--ar-pink) 16%, var(--sl-color-black)); color: var(--sl-color-white); border-bottom: 1px solid color-mix(in srgb, var(--ar-pink) 45%, transparent); }
-.asp-draft a { margin-inline-start: 0.5rem; color: var(--sl-color-white); font-weight: 600; }
+/* the release notice on every page, and the version in the header */
+.asp-status { padding: 0.45rem 1rem; text-align: center; font-size: var(--sl-text-sm); background: color-mix(in srgb, var(--ar-pink) 16%, var(--sl-color-black)); color: var(--sl-color-white); border-bottom: 1px solid color-mix(in srgb, var(--ar-pink) 45%, transparent); }
+.asp-status a { margin-inline-start: 0.5rem; color: var(--sl-color-white); font-weight: 600; }
 .asp-version { position: relative; margin-inline-end: 0.75rem; }
 .asp-version summary { list-style: none; cursor: pointer; font: 500 0.8rem var(--ar-mono); color: var(--sl-color-gray-2); border: 1px solid var(--sl-color-gray-5); padding: 0.2rem 0.55rem; white-space: nowrap; }
 .asp-version summary::-webkit-details-marker { display: none; }
@@ -51,7 +51,7 @@
 .asp-version small { color: var(--sl-color-accent); }
 @media (max-width: 50rem) { .asp-version { display: none; } }
 /* the home page's status, above the tagline */
-.hero .tagline::before { content: "Draft \00B7  v0"; display: block; width: max-content; margin-bottom: 0.75rem; padding: 0.15rem 0.6rem; font: 500 0.8rem var(--ar-mono); letter-spacing: 0.05em; color: var(--ar-pink); border: 1px solid var(--ar-pink); }
+.hero .tagline::before { content: "v0 \00B7  frozen"; display: block; width: max-content; margin-bottom: 0.75rem; padding: 0.15rem 0.6rem; font: 500 0.8rem var(--ar-mono); letter-spacing: 0.05em; color: var(--ar-pink); border: 1px solid var(--ar-pink); }
 
 /* the header holds the title, search, version, five sections and the menus without pushing any out */
 .site-title { flex-shrink: 0; }

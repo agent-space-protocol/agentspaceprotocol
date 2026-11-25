@@ -7,8 +7,9 @@ sidebar:
 
 **Version:** draft, every part at `0` · **Last updated:** 2026-11-25 · [Changelog](../changelog/)
 
-**Status: draft.** Every part of the protocol is at version `0` and may still change. The parts are
-frozen, after which they only grow, once real environments pass the conformance tests.
+**Status: v0, frozen on 2026-11-25.** Every part of the protocol is at version `0`. Real environments
+passed the conformance tests, and the parts are frozen: from now on the protocol only grows by
+addition.
 
 Every place an agent is in is a **space**: a world with a state, laws and participants. Agents and
 people enter a space, observe it and act in it through one open protocol, the **Agent Space
@@ -45,10 +46,10 @@ The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RE
 OPTIONAL are to be interpreted as described in RFC 2119 and RFC 8174 when, and only when, they
 appear in capitals.
 
-The single source of the messages is [`schema/draft/schema.ts`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/draft/schema.ts).
-[`schema/draft/schema.json`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/draft/schema.json)
+The single source of the messages is [`schema/v0/schema.ts`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/v0/schema.ts).
+[`schema/v0/schema.json`](https://github.com/agent-space-protocol/agentspaceprotocol/blob/main/schema/v0/schema.json)
 (JSON Schema 2020-12) and the [schema reference](reference/schema/) are generated from it, and
-`schema/draft/examples/` holds at least one checked example of every message. Where this text and
+`schema/v0/examples/` holds at least one checked example of every message. Where this text and
 the schema disagree, the schema is a bug to fix; report it.
 
 This English text is normative. The Chinese text is kept in sync with it.

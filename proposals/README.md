@@ -16,7 +16,7 @@ proposals.
 
 ## Rules for every proposal
 
-- Follow the [compatibility rules](../docs/en/specification/draft/compatibility.md): add, never rename or reuse; new
+- Follow the [compatibility rules](../docs/en/specification/v0/compatibility.md): add, never rename or reuse; new
   names in extensions carry a namespace.
 - Say which part it changes, and whether that part needs a new integer version.
 - Say how the conformance tests check it.

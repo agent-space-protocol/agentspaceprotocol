@@ -28,4 +28,4 @@ description: Every term of the protocol in one sentence.
 | Door | A link between two spaces, through which participants pass and things are handed over |
 | Part | A piece of the protocol with its own version: the core, or one capability |
 
-The normative definitions are in the [specification](../../../specification/draft/concepts/).
+The normative definitions are in the [specification](../../../specification/v0/concepts/).

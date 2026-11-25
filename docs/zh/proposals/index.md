@@ -13,6 +13,6 @@ description: Agent Space Protocol怎么改。
 | 接受 | 和规范改动、schema改动、示例和测试一起合并 |
 | 拒绝或撤回 | 带着状态合并，原因留下来 |
 
-每个提案都遵守[兼容的规矩](../specification/draft/compatibility/)，写明改的是哪一部分、这一部分要不要升版本，写明一致性测试怎么检查它，并且中英文一起改。
+每个提案都遵守[兼容的规矩](../specification/v0/compatibility/)，写明改的是哪一部分、这一部分要不要升版本，写明一致性测试怎么检查它，并且中英文一起改。
 
 模板和提案列表在[proposals/](https://github.com/agent-space-protocol/agentspaceprotocol/tree/main/proposals)。
