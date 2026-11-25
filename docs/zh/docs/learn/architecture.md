@@ -28,4 +28,4 @@ space要么自己**持有**状态，比如由引擎运行的房间和牌局；�
 4. **act**和**edit**：各带一个ID，最后恰好得到一个**outcome**。
 5. **leave**结束这次在场。
 
-消息是JSON，走WebSocket、带服务器推送事件的HTTP，或者标准输入输出。见[消息](../../../specification/draft/messages/)和[传输和身份](../../../specification/draft/transports/)，各个术语见[术语](../terminology/)。
+消息是JSON，走WebSocket、带服务器推送事件的HTTP，或者标准输入输出。见[消息](../../../specification/v0/messages/)和[传输和身份](../../../specification/v0/transports/)，各个术语见[术语](../terminology/)。

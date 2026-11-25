@@ -17,18 +17,18 @@ The protocol is divided into parts: the core, and one part per capability. Each 
 4. Every extension carries a namespace.
 5. Vocabulary packages are distinguished by major version and only add within it.
 
-See [Negotiation and compatibility](../../../specification/draft/compatibility/).
+See [Negotiation and compatibility](../../../specification/v0/compatibility/).
 
-## Draft and releases
+## Releases
 
-Every part is at version `0` while the protocol is a draft, and the text at [specification/draft](../../../specification/draft/) may still change. Once real environments pass the conformance tests, the parts are frozen and each release of the text is kept at a dated address, as MCP's is.
+Every part is at version `0`, frozen on 2026-11-25 (release v0), after real environments passed the conformance tests: the text at [specification/v0](../../../specification/v0/) only grows by addition. A change that is not an addition takes a new version of its part, and the text of that release is kept at an address of its own, as MCP's releases are.
 ## Current status
 
 | Piece | Version | Status |
 | --- | --- | --- |
-| Specification | draft, every part `0` | May change before the first release; last updated 2026-11-25 |
+| Specification | v0, every part `0` | Frozen on 2026-11-25; only additions from now on |
 | TypeScript SDK | draft | Installed from GitHub, not yet on npm |
-| Python SDK | draft | Installed from GitHub, not yet on PyPI |
+| Python SDK | 0.1.0 | On PyPI as `agent-space-protocol` |
 | Inspector | draft | Installed from GitHub, not yet on npm |
 
 The [changelog](../../../specification/changelog/) lists every change to the specification.

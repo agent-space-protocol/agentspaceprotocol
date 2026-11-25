@@ -51,6 +51,7 @@ After Protocol Buffers and Matrix:
 
 ## Freezing
 
-While the protocol is a draft, every part is at version `0` and problems are fixed directly in the
-specification. When the parts are frozen, each change that is not an addition takes a new integer
-version of its part, and spaces and participants list every version they still support.
+Every part was at version `0` while the protocol was a draft, and problems were fixed directly in the
+specification. The parts were frozen at version `0` on 2026-11-25 (release v0). From then on each change
+that is not an addition takes a new integer version of its part, and spaces and participants list
+every version they still support.

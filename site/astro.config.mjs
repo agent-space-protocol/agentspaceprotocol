@@ -42,7 +42,7 @@ export default defineConfig({
         "./src/styles/archive-reading.css",
         "./src/styles/site.css",
       ],
-      components: { SocialIcons: "./src/components/HeaderLinks.astro", Banner: "./src/components/DraftBanner.astro" },
+      components: { SocialIcons: "./src/components/HeaderLinks.astro", Banner: "./src/components/StatusBanner.astro" },
       lastUpdated: false,
       pagination: true,
       plugins: [
@@ -64,12 +64,12 @@ export default defineConfig({
             {
               id: "specification",
               label: { en: "Specification", ...zh("规范") },
-              link: "/specification/draft/",
+              link: "/specification/v0/",
               icon: "document",
               items: [
-                { slug: "specification/draft" },
-                { label: "Chapters", translations: zh("各章"), items: chapters.map((c) => ({ slug: `specification/draft/${c}` })) },
-                { label: "Schema reference", translations: zh("Schema 参考"), slug: "specification/draft/reference/schema" },
+                { slug: "specification/v0" },
+                { label: "Chapters", translations: zh("各章"), items: chapters.map((c) => ({ slug: `specification/v0/${c}` })) },
+                { label: "Schema reference", translations: zh("Schema 参考"), slug: "specification/v0/reference/schema" },
                 { slug: "specification/changelog" },
               ],
             },

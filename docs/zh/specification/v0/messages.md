@@ -40,7 +40,7 @@ description: ASP v0的每条消息、它们怎么得到回答，以及一次完�
    "reason":{"code":"unsupported", "text":"consent was not negotiated"}}
 ```
 
-space没有声明consent，所以握手的结果里没有这一部分，参与者的`consent`得到`unsupported`。完整的往来在`schema/draft/examples/exchanges/chat-group.jsonl`里对照schema检查过。
+space没有声明consent，所以握手的结果里没有这一部分，参与者的`consent`得到`unsupported`。完整的往来在`schema/v0/examples/exchanges/chat-group.jsonl`里对照schema检查过。
 
 ## 核心消息
 

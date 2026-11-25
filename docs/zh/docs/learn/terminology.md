@@ -28,4 +28,4 @@ description: 协议里的每个术语，各一句话。
 | 门 | 两个space之间的连接，参与者从这里走过，事物在这里交接 |
 | 部分 | 协议里有自己版本号的一块：核心，或某一项能力 |
 
-规范性的定义见[规范](../../../specification/draft/concepts/)。
+规范性的定义见[规范](../../../specification/v0/concepts/)。

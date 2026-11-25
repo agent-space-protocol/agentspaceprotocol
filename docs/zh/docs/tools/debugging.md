@@ -24,4 +24,4 @@ pnpm agent-space tui ws://127.0.0.1:7777 --plain            # every message, one
 | `deadline` | 动作的期限，或者等同意的时间，过了 |
 | `closed`、`restarted` | 动作进行中，space关闭了，或者崩溃后重启了 |
 
-完整的列表见[动作和结果](../../../specification/draft/actions/)。
+完整的列表见[动作和结果](../../../specification/v0/actions/)。

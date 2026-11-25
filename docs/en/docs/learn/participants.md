@@ -9,7 +9,7 @@ A participant's stay in a space, from entering to leaving, is a **presence**. Ea
 
 ## What it sees
 
-An observation is a projection of the state for this role and range of perception, in the space's vocabulary. Structure is always there; text, images, sound, video or a 3D scene are forms a space may declare. See [Observations and forms](../../../specification/draft/observations/).
+An observation is a projection of the state for this role and range of perception, in the space's vocabulary. Structure is always there; text, images, sound, video or a 3D scene are forms a space may declare. See [Observations and forms](../../../specification/v0/observations/).
 
 ## How it acts
 
@@ -23,8 +23,8 @@ An action has an ID, a verb, an object and parameters, and may name the observat
 | `cancelled` | Confirmed stopped, listing the effects before it stopped |
 | `unknown` | It may or may not have happened, with what is known and what is not confirmed |
 
-Sending the same ID again returns the first outcome; nothing runs twice. See [Actions and outcomes](../../../specification/draft/actions/).
+Sending the same ID again returns the first outcome; nothing runs twice. See [Actions and outcomes](../../../specification/v0/actions/).
 
 ## Events and the record
 
-Everything that happens is an event in the record, numbered in order. A participant subscribes from any sequence number and, after a disconnect, continues where it stopped. See [The record](../../../specification/draft/record/).
+Everything that happens is an event in the record, numbered in order. A participant subscribes from any sequence number and, after a disconnect, continues where it stopped. See [The record](../../../specification/v0/record/).

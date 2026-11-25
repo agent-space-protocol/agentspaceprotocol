@@ -9,7 +9,7 @@ import addFormatsModule from "ajv-formats";
 
 const addFormats = addFormatsModule as unknown as (ajv: Ajv2020) => void;
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const dir = join(root, "schema", "draft");
+const dir = join(root, "schema", "v0");
 const schema = JSON.parse(readFileSync(join(dir, "schema.json"), "utf8"));
 const ajv = new Ajv2020({ strict: false, allErrors: true });
 addFormats(ajv);

@@ -46,7 +46,7 @@ whether the chat platform delivered it, and the outcome is `unknown`, stating wh
 
 The space did not declare consent, so that part is missing from the result of the handshake, and
 the participant's `consent` gets `unsupported`. The full exchange is checked against the schema in
-`schema/draft/examples/exchanges/chat-group.jsonl`.
+`schema/v0/examples/exchanges/chat-group.jsonl`.
 
 ## Core messages
 

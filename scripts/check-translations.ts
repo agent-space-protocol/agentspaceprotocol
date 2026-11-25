@@ -53,7 +53,7 @@ function shape(text: string) {
   return { fm, headings, tables, code, links };
 }
 
-const ENGLISH_ONLY = ["specification/draft/reference/"];
+const ENGLISH_ONLY = ["specification/v0/reference/"];
 function pages(dir: string, prefix = ""): string[] {
   return readdirSync(dir).flatMap((f) => {
     const rel = prefix + f;

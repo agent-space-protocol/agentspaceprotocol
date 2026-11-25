@@ -17,18 +17,18 @@ ASP是整个系统里要长期稳定的部分：agent、space和客户端只要�
 4. 每个扩展都带命名空间。
 5. 词汇的包按大版本区分，同一个大版本里只加不改。
 
-见[协商和兼容](../../../specification/draft/compatibility/)。
+见[协商和兼容](../../../specification/v0/compatibility/)。
 
-## 草案和发布
+## 发布
 
-协议还是草案时，每部分都是版本`0`，[specification/draft](../../../specification/draft/)里的正文还可能改。等真实的环境通过一致性测试，各部分冻结，之后每一版正文都留在一个按日期的地址上，和MCP一样。
+真实的环境通过一致性测试后，每部分都在版本`0`冻结（2026-11-25，发布v0）：[specification/v0](../../../specification/v0/)里的正文从此只做加法。不是加法的改动让它所在的部分取一个新版本，那一版正文留在它自己的地址上，和MCP的发布一样。
 ## 现在的状态
 
 | 部分 | 版本 | 状态 |
 | --- | --- | --- |
-| 规范 | 草案，每部分都是`0` | 第一次正式发布前还可能改；最后更新于2026-11-25 |
+| 规范 | v0，每部分都是`0` | 2026-11-25冻结；从此只做加法 |
 | TypeScript SDK | 草案 | 从GitHub安装，还没发布到npm |
-| Python SDK | 草案 | 从GitHub安装，还没发布到PyPI |
+| Python SDK | 0.1.0 | 在PyPI上，名为`agent-space-protocol` |
 | Inspector | 草案 | 从GitHub安装，还没发布到npm |
 
 规范的每次改动都列在[变更记录](../../../specification/changelog/)里。

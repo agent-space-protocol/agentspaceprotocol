@@ -5,8 +5,8 @@ description: 接下来做什么，按顺序。
 
 | 步骤 | 内容 | 状态 |
 | --- | --- | --- |
-| 1 | 规范v0草案、schema、示例和一致性测试 | 完成 |
-| 2 | TypeScript和Python SDK、inspector、测试space | 完成，草案 |
+| 1 | 规范v0、schema、示例和一致性测试 | 完成；2026-11-25冻结 |
+| 2 | TypeScript和Python SDK、inspector、测试space | 完成；Python SDK已发布到PyPI |
 | 3 | space引擎 | 计划中 |
 | 4 | 包和参考space：房间、聊天群、一局牌 | 计划中 |
 | 5 | 界面扩展和网页组件`<agent-space>` | 计划中 |

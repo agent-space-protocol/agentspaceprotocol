@@ -28,4 +28,4 @@ A space either **holds** its state, as a room or a card game run by an engine do
 4. **act** and **edit**: each with an ID, ending in exactly one **outcome**.
 5. **leave** ends the presence.
 
-Messages are JSON over WebSocket, HTTP with server-sent events, or standard input and output. See [Messages](../../../specification/draft/messages/) and [Transports and identity](../../../specification/draft/transports/), and [Terminology](../terminology/) for every term.
+Messages are JSON over WebSocket, HTTP with server-sent events, or standard input and output. See [Messages](../../../specification/v0/messages/) and [Transports and identity](../../../specification/v0/transports/), and [Terminology](../terminology/) for every term.
