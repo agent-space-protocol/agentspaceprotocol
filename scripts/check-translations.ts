@@ -1,7 +1,8 @@
-// Checks that the Chinese specification keeps the structure of the English one, which is
-// normative: the same files, frontmatter keys, headings (level and order), table rows and columns,
-// code blocks (identical), and links. Prose is compared by people; structure is compared here.
-import { readFileSync, readdirSync, existsSync } from "node:fs";
+// Checks that the Chinese site keeps the structure of the English one, which is normative for the
+// specification: the same files, frontmatter keys, headings (level and order), table rows and
+// columns, code blocks (identical), and links, for every page. The schema reference is generated
+// in English only. Prose is compared by people; structure is compared here.
+import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -52,8 +53,16 @@ function shape(text: string) {
   return { fm, headings, tables, code, links };
 }
 
-const enFiles = readdirSync(en).filter((f) => f.endsWith(".md"));
-const zhFiles = readdirSync(zh).filter((f) => f.endsWith(".md"));
+const ENGLISH_ONLY = ["specification/draft/reference/"];
+function pages(dir: string, prefix = ""): string[] {
+  return readdirSync(dir).flatMap((f) => {
+    const rel = prefix + f;
+    if (statSync(join(dir, f)).isDirectory()) return pages(join(dir, f), rel + "/");
+    return f.endsWith(".md") && !ENGLISH_ONLY.some((p) => rel.startsWith(p)) ? [rel] : [];
+  });
+}
+const enFiles = pages(en);
+const zhFiles = pages(zh);
 for (const f of enFiles) if (!zhFiles.includes(f)) fail(`zh/${f}`, "missing");
 for (const f of zhFiles) if (!enFiles.includes(f)) fail(`zh/${f}`, "has no English original");
 for (const f of enFiles) {
@@ -70,4 +79,4 @@ if (failures) {
   console.error(`${failures} difference(s) between docs/en and docs/zh`);
   process.exit(1);
 }
-console.log(`docs/zh keeps the structure of docs/en in all ${enFiles.length} chapters`);
+console.log(`docs/zh keeps the structure of docs/en in all ${enFiles.length} pages`);

@@ -125,6 +125,6 @@ function emit(path: string, content: string): boolean {
 
 const schema = buildSchema();
 let ok = emit(join(root, "schema", version, "schema.json"), JSON.stringify(schema, null, 2) + "\n");
-ok = emit(join(root, "docs", "en", "reference", "schema.md"), buildReference(schema) + "\n") && ok;
+ok = emit(join(root, "docs", "en", "specification", "draft", "reference", "schema.md"), buildReference(schema) + "\n") && ok;
 if (!ok) process.exit(1);
 if (check) console.log("generated files are up to date");

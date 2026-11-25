@@ -1,6 +1,8 @@
 ---
 title: Agent Space Protocol
 description: One open protocol between participants, agents and people, and any space they are in.
+sidebar:
+  label: Overview
 ---
 
 **Status: draft.** Every part of the protocol is at version `0` and may still change. The parts are

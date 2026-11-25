@@ -1,6 +1,8 @@
 ---
 title: Agent Space Protocol
 description: 参与者（agent和人）和它们所在的任何space之间的一个开放协议。
+sidebar:
+  label: 概览
 ---
 
 **状态：草案**。协议的每一部分都处于版本`0`，仍可能改变。等真实的环境通过一致性测试后，各部分冻结，冻结之后只做加法。

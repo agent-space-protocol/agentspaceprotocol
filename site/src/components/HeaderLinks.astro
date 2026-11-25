@@ -1,0 +1,22 @@
+---
+// The header's section links, as on modelcontextprotocol.io, before the social icons.
+import Default from "@astrojs/starlight/components/SocialIcons.astro";
+
+const locale = Astro.locals.starlightRoute.locale ?? "en";
+const zh = locale === "zh";
+const here = Astro.url.pathname;
+const root = import.meta.env.BASE_URL.replace(/\/$/, "");
+const sections = [
+  ["docs/intro/", zh ? "文档" : "Documentation", "docs/"],
+  ["specification/draft/", zh ? "规范" : "Specification", "specification/"],
+  ["extensions/", zh ? "扩展" : "Extensions", "extensions/"],
+  ["proposals/", zh ? "提案" : "Proposals", "proposals/"],
+  ["community/contributing/", zh ? "社区" : "Community", "community/"],
+];
+---
+<nav class="asp-sections" aria-label={zh ? "各部分" : "Sections"}>
+  {sections.map(([href, label, area]) => (
+    <a href={`${root}/${locale}/${href}`} aria-current={here.startsWith(`${root}/${locale}/${area}`) ? "page" : undefined}>{label}</a>
+  ))}
+</nav>
+<Default />
