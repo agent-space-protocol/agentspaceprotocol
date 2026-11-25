@@ -1,0 +1,65 @@
+# Builds the site and deploys it to GitHub Pages on every push to main.
+# Until the domain is bound, the site is served at https://agent-space-protocol.github.io/agentspaceprotocol/.
+# Once the repository variable SITE_DOMAIN is set (for example agentspaceprotocol.org), the build
+# writes a CNAME for it and serves the site from the root of that domain.
+name: Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: |
+            pnpm-lock.yaml
+            site/pnpm-lock.yaml
+      - name: Check the specification and its translation
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm check
+      - name: Build the site
+        env:
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+        run: |
+          if [ -n "$SITE_DOMAIN" ]; then
+            export ASTRO_SITE="https://$SITE_DOMAIN" ASTRO_BASE="/"
+            echo "$SITE_DOMAIN" > site/public/CNAME
+          else
+            export ASTRO_SITE="https://agent-space-protocol.github.io" ASTRO_BASE="/agentspaceprotocol"
+          fi
+          pnpm --dir site install --frozen-lockfile
+          pnpm --dir site build
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: site/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
