@@ -1,0 +1,7 @@
+{
+  "type": "observe",
+  "id": "o2",
+  "forms": [
+    "text"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "sense",
+  "id": "se1",
+  "op": "place",
+  "name": "lit",
+  "language": "jsonpath",
+  "query": "$.things[?(@.on==true)].id"
+}

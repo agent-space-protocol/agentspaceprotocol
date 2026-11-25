@@ -1,0 +1,9 @@
+{
+  "type": "waiting",
+  "id": "a30",
+  "for": {
+    "role": "owner"
+  },
+  "act": 1201,
+  "until": "2026-11-24T21:10:00Z"
+}

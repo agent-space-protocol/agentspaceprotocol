@@ -1,0 +1,19 @@
+{
+  "type": "hello",
+  "parts": {
+    "core": [
+      0
+    ],
+    "forms": [
+      0
+    ],
+    "consent": [
+      0
+    ]
+  },
+  "participant": "ed25519:7Hq2bW3k9xQvTnL0aZcRyE5uJpS8dF1gHiK4mO6wXr2",
+  "client": {
+    "name": "example-agent",
+    "version": "1.0.0"
+  }
+}

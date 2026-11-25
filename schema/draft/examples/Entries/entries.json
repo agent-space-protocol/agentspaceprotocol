@@ -1,0 +1,27 @@
+{
+  "type": "entries",
+  "id": "r1",
+  "head": 1050,
+  "earliest": 1,
+  "more": false,
+  "entries": [
+    {
+      "specversion": "1.0",
+      "id": "1043",
+      "source": "space",
+      "type": "asp.outcome",
+      "time": "2026-11-24T21:05:20Z",
+      "seq": 1043,
+      "aspcore": 0,
+      "cause": 1041,
+      "data": {
+        "presence": "p-3",
+        "id": "a17",
+        "end": "done",
+        "events": [
+          1042
+        ]
+      }
+    }
+  ]
+}

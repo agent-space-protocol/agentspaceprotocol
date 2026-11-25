@@ -1,0 +1,10 @@
+{
+  "type": "act",
+  "id": "a17",
+  "verb": "chat.reply",
+  "object": "msg:88",
+  "args": {
+    "text": "Seven, at the east gate."
+  },
+  "basis": 1041
+}

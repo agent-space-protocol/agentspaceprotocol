@@ -1,0 +1,15 @@
+{
+  "type": "outcome",
+  "id": "j1",
+  "end": "done",
+  "seq": 1041,
+  "result": {
+    "presence": "p-3",
+    "role": "member",
+    "presentation": {
+      "avatar": "used"
+    },
+    "resume": "r-8f2a6c",
+    "head": 1040
+  }
+}

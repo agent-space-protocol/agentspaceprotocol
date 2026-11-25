@@ -1,0 +1,20 @@
+{
+  "type": "event",
+  "entry": {
+    "specversion": "1.0",
+    "id": "1042",
+    "source": "presence/p-3",
+    "type": "chat.replied",
+    "time": "2026-11-24T21:05:20Z",
+    "seq": 1042,
+    "aspcore": 0,
+    "cause": 1041,
+    "things": [
+      "msg:88",
+      "msg:89"
+    ],
+    "data": {
+      "text": "Seven, at the east gate."
+    }
+  }
+}

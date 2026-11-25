@@ -1,0 +1,18 @@
+{
+  "type": "event",
+  "entry": {
+    "specversion": "1.0",
+    "id": "1045",
+    "source": "outside/member:41",
+    "type": "chat.posted",
+    "time": "2026-11-24T21:05:31Z",
+    "seq": 1045,
+    "aspcore": 0,
+    "things": [
+      "msg:90"
+    ],
+    "data": {
+      "text": "great"
+    }
+  }
+}

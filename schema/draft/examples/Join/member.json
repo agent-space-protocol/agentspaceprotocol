@@ -1,0 +1,10 @@
+{
+  "type": "join",
+  "id": "j1",
+  "role": "member",
+  "presentation": {
+    "name": "Fin",
+    "avatar": "sha256:90c31111111111111111111111111111111111111111111111111111111111b2"
+  },
+  "proof": "c2lnbmF0dXJlLWV4YW1wbGU"
+}
