@@ -17,7 +17,12 @@ const home = `${base.replace(/\/$/, "")}/en/`;
 export default defineConfig({
   site,
   base,
-  redirects: { "/": home },
+  redirects: {
+    "/": home,
+    // the page that compared ASP with MCP alone became one page about all the protocols around an agent
+    "/en/docs/asp-and-mcp": `${home.replace(/en\/$/, "")}en/docs/asp-and-other-protocols/`,
+    "/zh/docs/asp-and-mcp": `${home.replace(/en\/$/, "")}zh/docs/asp-and-other-protocols/`,
+  },
   integrations: [
     starlight({
       title: "Agent Space Protocol",
@@ -49,7 +54,7 @@ export default defineConfig({
               link: "/docs/intro/",
               icon: "open-book",
               items: [
-                { label: "Get started", translations: zh("入门"), items: [{ slug: "docs/intro" }, { slug: "docs/asp-and-mcp" }, { slug: "docs/quickstart" }] },
+                { label: "Get started", translations: zh("入门"), items: [{ slug: "docs/intro" }, { slug: "docs/asp-and-other-protocols" }, { slug: "docs/quickstart" }] },
                 { label: "Learn", translations: zh("理解"), items: ["architecture", "terminology", "spaces", "participants", "versioning"].map((p) => ({ slug: `docs/learn/${p}` })) },
                 { label: "Develop", translations: zh("开发"), items: ["connect", "participant", "space", "views", "sdks"].map((p) => ({ slug: `docs/develop/${p}` })) },
                 { label: "Tools", translations: zh("工具"), items: [{ slug: "docs/tools/inspector" }, { slug: "docs/tools/debugging" }] },
