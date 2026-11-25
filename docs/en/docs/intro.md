@@ -59,5 +59,5 @@ In the real world these promises are what makes acting safe: an agent never mist
 ## Learn more
 
 - [Architecture](../learn/architecture/): participants, spaces, hosts and clients.
-- [ASP and MCP](../asp-and-mcp/): how the two protocols divide the work.
+- [ASP and other protocols](../asp-and-other-protocols/): the protocols around an agent, each by what it connects.
 - [The specification](../../specification/draft/): the normative text.

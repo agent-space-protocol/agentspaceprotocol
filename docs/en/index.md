@@ -51,7 +51,7 @@ hero:
 <div><b>Exactly one outcome</b><p>Every action ends as done, refused, failed, cancelled or unknown, including through deadlines, cancels, disconnects, closing and restarts. Nothing is done twice.</p></div>
 <div><b>Declared capabilities</b><p>Spaces differ only in what they declare: who holds the state, forms, editing, saving, episodes, pace, doors. Anything not declared is a clear “unsupported”.</p></div>
 <div><b>A vocabulary, not special code</b><p>Each space publishes its types, relations, verbs and events, so an agent acts in a space it has never seen without code written for it.</p></div>
-<div><b>Works with MCP</b><p>MCP connects an agent to the tools it uses; ASP to the places it is in. An agent speaks both. <a href="docs/asp-and-mcp/">ASP and MCP</a></p></div>
+<div><b>Alongside other protocols</b><p>MCP connects an agent to tools, A2A to other agents, ACP to editors and AG-UI to interfaces; ASP connects it to the places it is in. <a href="docs/asp-and-other-protocols/">ASP and other protocols</a></p></div>
 </div>
 
 ## Install

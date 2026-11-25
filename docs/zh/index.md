@@ -51,7 +51,7 @@ hero:
 <div><b>恰好一个结果</b><p>每个动作都落到完成、拒绝、失败、取消、不确定之一，到期、取消、断线、关闭和重启也一样。不会做两次。</p></div>
 <div><b>能力要声明</b><p>space之间只有声明的不同：状态归谁、形式、编辑、存档、按局进行、节奏、门。没声明的就是明确的"不支持"。</p></div>
 <div><b>靠词汇，不靠专门的代码</b><p>每个space发布自己的类型、关系、动词和事件，agent进一个从没见过的space也不需要为它写代码。</p></div>
-<div><b>和MCP一起用</b><p>MCP把agent接到它用的工具上，ASP把它接到它所在的地方。一个agent两个都说。<a href="docs/asp-and-mcp/">ASP和MCP</a></p></div>
+<div><b>和其他协议并用</b><p>MCP把agent连到工具，A2A连到别的agent，ACP连到编辑器，AG-UI连到界面；ASP把它连到它所在的地方。<a href="docs/asp-and-other-protocols/">ASP和其他协议</a></p></div>
 </div>
 
 ## 安装
